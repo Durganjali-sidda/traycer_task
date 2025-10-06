@@ -72,3 +72,57 @@ export default defineConfig([
 ])
 ```
 "# traycer_task" 
+ 
+
+
+ # Login Page Project
+
+A simple login page built with **React**, **Tailwind CSS**, and **Zustand** for state management. This project demonstrates a frontend login flow using dummy data or API integration.
+
+---
+
+## Features
+
+- Responsive login form with **email** and **password** fields  
+- **Zustand** store to manage authentication state  
+- Protected routes for authenticated users  
+- Dummy token storage in **localStorage** for frontend development  
+- Easy to integrate with a backend API (Django, Node.js, etc.)
+
+---
+
+## Tech Stack
+
+- **Frontend:** React + TypeScript + Tailwind CSS  
+- **State Management:** Zustand  
+- **Routing:** React Router v6  
+- **Backend (optional):** Can integrate with JWT-based API
+
+---
+
+## Quick Demo Script
+
+1. **Open the app** (e.g., `npm run dev` for Vite).  
+2. **Navigate to Login Page**.  
+3. **Enter dummy credentials** (or real API credentials if connected).  
+4. Click **Login** → token and user info will be stored in `localStorage`.  
+5. Redirect happens to the **dashboard/home page**.  
+6. **Protected routes** will only allow access if logged in.  
+7. Click **Logout** to clear the token and return to login page.  
+
+> *Tip:* You can also modify the `authStore` to use real API calls or dummy data while developing.
+
+---
+
+## Installation
+
+```bash
+# Clone repository
+git clone https://github.com/your-username/login-page.git
+cd login-page
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev

@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",      // Make sure you extend the base tsconfig
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["vite/client", "react", "react-dom"]   // add React types here
+  },
+  "include": ["src"]
+}
